@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95eacc2461.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="Login_Container">
+        
+        <div class="Lizqd">
+    
+            <div class="Lizqd_Content">
+                <h1>Visita Extremadura</h1>
+                <p>Descubre la belleza oculta de España</p>
+            </div>
+            <div class="RRSS">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+    
+        </div>
+        <div class="Lderch">
+    
+            <div class="botones">
+                <button id="iniciar_sesion">Iniciar Sesión</button>
+                <button id="registrarse">Registrarse</button>
+            </div>
+    
+        </div>
+        
+    </div>
+    <div class="pantallaInicio">
+        <button id="botonCerrarIni"><i class="fa-regular fa-circle-xmark"></i></button>
+        <h2>Inicio de Sesión</h2><br>
+        <form action="#">
+            <!-- <label for="Usuario">Nombre de Usuario</label> -->
+            <input type="text" name="Usuario" placeholder="Usuario" autocomplete="off"><br>
+            <!-- <label for="Contraseña">Contraseña</label> -->
+            <input type="password" name="Contraseña" placeholder="Contraseña" autocomplete="off">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <div class="pantallaRegistro">
+        <button id="botonCerrarReg"><i class="fa-regular fa-circle-xmark"></i></button>
+        <h2>Inicio de Sesión</h2><br>
+        <form action="#">
+            <input type="text" name="Nombre_Apellidos" placeholder="Nombre y Apellidos" autocomplete="off"><br>
+            <input type="text" name="Usuario" placeholder="Usuario" autocomplete="off"><br>
+            <input type="password" name="Contraseña" placeholder="Contraseña" autocomplete="off"><br>
+            <input type="password" name="Confirm_Contraseña" placeholder="Confirmar Contraseña" autocomplete="off">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

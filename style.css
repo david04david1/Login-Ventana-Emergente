@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Roboto, 'Open Sans';
+}
+
+.Login_Container{
+    display: flex;
+    background-image: url(CerroMOSC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.Lizqd{
+
+    width: 50%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.Lizqd_Content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px double white;
+    padding: 5%;
+
+    p{
+        color:  rgb(255, 191, 0);
+    }
+
+}
+
+.RRSS{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    margin-top: 2%;
+
+    a{
+        font-style: none;
+        color: white;
+    }
+
+    img{
+        width: 20%;
+    }
+
+}
+
+.Lderch{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid rgba(255, 191, 0,0.45);
+    width: 50%;
+
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    margin: 0 10%;
+
+    button#iniciar_sesion{
+
+        border: none;
+        background-color: #EDB88B;
+        width: 35%;
+        height: 5vh;
+        border-radius: 5px;
+        border: 5px double white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.15rem;
+        transition: 0.5s;
+
+        &:hover{
+            box-shadow: 1px 1px 10px white;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+    }
+
+    button#registrarse{
+
+        border: none;
+        background-color: rgb(255, 255, 255);
+        width: 35%;
+        height: 5vh;
+        border-radius: 5px;
+        border: 5px double #EDB88B;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.15rem;
+
+        &:hover{
+            box-shadow: 1px 1px 10px #EDB88B;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+.pantallaInicio{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #EDB88B;
+    border-radius: 20px;
+    width: 30%;
+    height: 40vh;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+
+        button{
+            width: 100%;
+            height: 4vh;
+            background-color: #EDB88B;
+            margin-top: 8%;
+            outline: none;
+            border: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: #c29771;
+                transition: 0.5s;
+            }
+        }
+    }
+    
+    input{
+        background-color: lightgray;
+        width: 100%;
+        height: 4vh;
+        border: none;
+        padding: 2%;
+        outline: none;
+        
+        &:focus{
+            border: 5px solid #EDB88B;
+            transition: 0.5s;
+        }
+    }
+
+    button#botonCerrarIni{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 80%;
+        font-size: 1.65rem;
+        margin-top: -10%;
+    }
+
+}
+
+.pantallaRegistro{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #EDB88B;
+    border-radius: 20px;
+    width: 30%;
+    height: 50vh;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+
+        button{
+            width: 100%;
+            height: 4vh;
+            background-color: #EDB88B;
+            margin-top: 8%;
+            outline: none;
+            border: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: #c29771;
+                transition: 0.5s;
+            }
+        }
+    }
+    
+    input{
+        background-color: lightgray;
+        width: 100%;
+        height: 4vh;
+        border: none;
+        padding: 2%;
+        outline: none;
+        
+        &:focus{
+            border: 5px solid #EDB88B;
+            transition: 0.5s;
+        }
+    }
+
+    button#botonCerrarReg{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 80%;
+        font-size: 1.65rem;
+        margin-top: -10%;
+    }
+
+}
